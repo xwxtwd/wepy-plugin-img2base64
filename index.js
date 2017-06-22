@@ -28,7 +28,7 @@ export default class {
           const dataUri = `data:${mimeType};base64,${base64Str}`
           op.code = op.code.replace(imgPath, `${dataUri}`)
         } catch(e) {
-          console.err('读取图片失败')
+          console.error('读取图片失败:', pathFile)
         }
       })
     }
