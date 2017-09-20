@@ -1,6 +1,6 @@
 {
   "name": "wepy-plugin-img2base64",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "wepy image plugin image to base64",
   "main": "lib/index.js",
   "scripts": {
