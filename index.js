@@ -16,7 +16,7 @@ export default class {
 
   apply(op) {
     const { code, file } = op;
-    if (code && !/app\.js/.test(file)) {
+    if (code && typeof code === 'string' && !/app\.js/.test(file)) {
       const reg = /(\.{0,2}\/)+(\w+\/)+(\S+)\.(png|jpg|gif|jpeg)/gi;
       const imgPaths = code.match(reg) || [];
       imgPaths.map(imgPath => {
